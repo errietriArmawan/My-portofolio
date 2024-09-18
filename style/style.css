@@ -1,0 +1,349 @@
+/* FONT YANG DIGUNAKAN */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container{
+    width: 100%;
+    padding-block: 15px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    background-color: transparent;
+    position:fixed;
+}
+
+.navbar-container .logo{
+    font-size: 2em;
+    font-family: "Dancing Script", cursive;
+    color: rgb(170, 0, 255);
+    font-weight: 900;
+    margin-left: 30px;
+}
+.navbar-container .nav-list ul{
+    display: flex;
+    justify-content: center;
+    padding-left: o;
+    gap: 2em 1rem;
+}
+
+.navbar-container .nav-list li{
+   list-style-type: none;
+}
+
+.navbar-container .nav-list li a{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:  rgb(170, 0, 255);
+    font-weight: 600;
+    transition: all 1 ease-out ;
+}
+.navbar-container .nav-list li a:hover{
+    color: black;
+}
+
+main{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* ARTICLE 1 */
+.content{
+    background-color: rgb(255, 255, 255);
+}
+#beranda{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(1, 22, 255); */
+}
+#beranda .isi-beranda{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: aqua; */
+    justify-content: center;
+    gap: 100px;
+}
+#beranda .isi-beranda .pembuka{
+    font-size: 25px;
+}
+#beranda .isi-beranda .pembuka h1 span{
+    color:rgb(170, 0, 255) ;
+}
+#beranda .isi-beranda .pembuka .button{
+    line-height: 5;
+    font-size: 20px;
+}
+#beranda .isi-beranda .pembuka .button a{
+   text-decoration: none;
+   color: white;
+   background-color: rgb(170, 0, 255);
+   padding: 9px;
+   border-radius: 20px;
+}
+#beranda .isi-beranda .pembuka .button a:hover{
+    background-color: black;
+    color: white;
+}
+#beranda .isi-beranda .gambar-pembuka{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.225);
+    border-radius: 20px;
+}
+.button{
+    margin-bottom: 20px;
+}
+#beranda .gambar-pembuka img{
+    width: 500px;
+    align-self: flex-end;
+    position: relative;
+}
+
+#tentang-saya{
+    display: flex;
+    height: 50vh;
+    margin-top: auto;
+    flex-wrap: wrap;
+    width: auto;
+}
+#tentang-saya .isi-tentang-saya{
+    margin: 3em;
+    line-height: 1.5;
+}
+#tentang-saya .isi-tentang-saya .judul{
+    font-size: 30px;
+    text-align: center;
+}
+#tentang-saya .isi-tentang-saya p{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.paralax-1, .paralax-2{
+    height: 90vh;
+    position: relative;
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.paralax-1{
+    background-image: url(../assets/pexels-felixmittermeier-355762.jpg);
+}
+.paralax-2{
+    background-image: url(../assets/purple-669046_1920.jpg);
+}
+.paralax-1 .quotes{
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.paralax-1 .quotes span{
+    background-color: #461258;
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+    letter-spacing: 9px;
+}
+.paralax-2 .quotes{
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.paralax-2 .quotes span{
+    background-color: #461258;
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+    letter-spacing: 9px;
+}
+
+/* ASIDE */
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    padding: auto;
+}
+
+aside article{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    gap: 5em;
+    /* background-color: aqua; */
+    margin-left: 40px;
+
+}
+aside article .foto img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid  rgb(170, 0, 255);
+}
+
+aside article .foto-isi{
+    display: flex;
+    margin: 2em;
+    text-align: justify;
+}
+aside article .foto-isi .kontak .deskripsi{
+    font-size: 16px;
+}
+aside article .foto-isi .kontak .deskripsi h2{
+    margin: 20px;
+}
+aside article .foto-isi .kontak ul{
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+aside article .foto-isi .kontak ul li{
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+aside article .foto-isi .kontak ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-up{
+    font-size: 40px;
+    align-self: flex-end;
+}
+
+footer{
+    background-color:rgb(170, 0, 255);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    }
+    
+    .navbar-container .nav-list ul {
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    #beranda{
+        height: 70vh;
+    }
+    #beranda .isi-beranda {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    #beranda .gambar-pembuka img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #tentang-saya .isi-tentang-saya {
+        margin: 1em;
+    }
+    
+    aside {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    aside article {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+    
+    aside article .foto-isi {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    
+    .button-up {
+      margin-top: 50px;
+      margin-right: 10px;
+    }
+    .paralax-1, .paralax-2{
+        height: 50vh;
+    }
+    aside{
+        height: 70vh;
+    }
+    aside article .foto img{
+        width: 150px;
+        height: 150px;
+    }
+    footer{
+        position: relative;
+    }
+    .paralax-2 .quotes span{
+        background-color: #461258;
+        color: #fff;
+        padding: 10px;
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+    .paralax-1 .quotes span{
+        background-color: #461258;
+        color: #fff;
+        padding: 10px;
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+    }
+    
+
+
+
+
+
